@@ -2,36 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
     <title>Burgers</title>
     <script src="https://code.jquery.com/jquery.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="/assets/js/burgers.js"></script>
   </head>
   <body>
     <h1>Burgers!</h1>
 
-    <h2>Burgers to be devoured!</h2>
-
-    <ul id="waiting"></ul>
-
-    <h2>Burgers that were devoured!</h2>
-
-    <ul id="devoured"></ul>
-
     <h2>Add a Burger</h2>
-    <form class="create-form">
-      <div class="form-group">
-        <label for="ca">Cat Name:</label>
-        <input type="text" id="ca" name="name" />
+    <form class="submitBurger">
+      <input type="text" class="form-control" name="burger_name" value="" id="burger_name"/>
+      <button type="submit"class="btn btn-primary"id="text-enter-button"> Submit</button>
+      </form>
+    <div class="row">
+      <div class="col-lg-6">
+        <h2>Burgers to be devoured!</h2>
+        <div id="waiting"></div>
       </div>
+      <div class="col-lg-6">
+        <h2>Burgers that were devoured!</h2>
+        <div id="devoured"></div>
+      </div>
+    </div>
 
-      <!--  <div class="form-group">
-        <label for="sleepy">Sleepy?</label><br />
-        <input type="radio" name="sleepy" value="1" checked /> Sleepy!<br />
-        <input type="radio" name="sleepy" value="0" /> Awake
-      </div> -->
 
-      <button type="submit">Add Cat</button>
-    </form>
+
   </body>
 </html>
